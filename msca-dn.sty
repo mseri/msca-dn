@@ -4,7 +4,7 @@
 %% Phil Garner, October 2019
 %%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{msca-dn}[MSC DN Proposal]
+\ProvidesPackage{msca-dn}[MSC DN\-JD Proposal]
 
 % Default values when options are not specified
 \usepackage{xspace}
@@ -43,7 +43,7 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\chead{\project\ --- DN}
+\chead{\project\ --- DN-JD}
 \lhead{}
 \rhead{}
 \rfoot{}
@@ -71,6 +71,11 @@
     \end{tabular}
   \end{center}
 }
+
+% Tags used by EU MSCA action system
+\newcommand{\size}[2]{{\fontsize{#1}{0}\selectfont#2}}
+\newcommand{\DNtag}[1]{\textcolor{gray}{\size{9}{\#@#1@\#}}}
+\newcommand{\DNtage}[1]{\textcolor{gray}{\size{9}{\#§#1§\#}}}
 
 % Using a section command here prevents the widow / orphan thing with homemade command
 \newcommand{\msccaption}[1]{\subsubsection*{#1}}
@@ -141,7 +146,7 @@
     MARIE SKŁODOWSKA-CURIE ACTIONS\\
     \vspace{15mm}
     \textbf{Doctoral Networks (DN)}\\
-    \textbf{Call: HORIZON-MSCA-2022-DN-01-01}\\
+    \textbf{Call: HORIZON-MSCA-2024-DN-01-01}\\
     \vspace{15mm}
     PART B\\
     \vspace{15mm}
@@ -150,7 +155,7 @@
     \normalsize
     \textbf{This proposal is to be evaluated as:}\\
     \vspace{5mm}
-    \textbf{DN}
+    \textbf{DN-JD}
     \end{center}
     \newpage
 }
