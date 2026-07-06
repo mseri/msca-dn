@@ -27,8 +27,8 @@
 \ProcessOptions\relax
 
 % Minimum font size should be 11pt in the document header.  This yields
-%  \normalsize   10.95 pt
-%  \footnotesize 9 pt, suitable for tables
+%  \normalsize   10.95 pt, the minimum size for both body text and tables as of 2026
+%  \footnotesize 9 pt
 %  \scriptsize   8 pt, suitable for footnote references
 \usepackage[a4paper,margin=15mm]{geometry}
 \usepackage[bf,small]{titlesec}
@@ -62,7 +62,7 @@
 % For tables; these are not floats, they are more just tabular environments.  With [11pt] in the documentstyle, \scriptsize is 8pt
 \usepackage{array}
 \usepackage[table]{xcolor}
-\newenvironment{msctable}[2][\footnotesize]{% \footnotesize is 9pt, the minimum size as of 2021
+\newenvironment{msctable}[2][\normalsize]{% \normalsize is 10.95pt, the minimum table size as of 2026
   \begin{center}
     #1 % Set the right size (and font maybe)
     \newcommand{\ra}{\raggedright\arraybackslash}
@@ -146,7 +146,8 @@
     MARIE SKŁODOWSKA-CURIE ACTIONS\\
     \vspace{15mm}
     \textbf{Doctoral Networks (DN)}\\
-    \textbf{Call: HORIZON-MSCA-2024-DN-01-01}\\
+    \textbf{Call: HORIZON-MSCA-2026-DN-01-01}\\
+    \textbf{HORIZON-RAISE-2026-01-MSCA}\\
     \vspace{15mm}
     PART B\\
     \vspace{15mm}
